@@ -3,6 +3,7 @@ import cv2
 
 # 加载模型
 model = YOLO('best.pt')
+print(model.model.yaml)  # 输出模型类名
 
 # 分类数量
 num_classes = model.model.model[-1].nc  # 最后一层是 Detect，里面有 nc（num_classes）
