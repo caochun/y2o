@@ -10,5 +10,6 @@ python onnx_predict.py
 ## ONNX to OM
 
 - install ascend-toolkit 8.0.0beta1
+- o2a.sh
 - make acllite
 - cmake and make
