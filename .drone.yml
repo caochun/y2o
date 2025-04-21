@@ -7,4 +7,4 @@ steps:
     image: alpine
     commands:
       - echo "Hello, Drone! Running in $(pwd)"
-      - git --version
+      - ls -la
