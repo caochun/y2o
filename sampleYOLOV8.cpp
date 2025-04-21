@@ -164,10 +164,10 @@ Result SampleYOLOV8::GetResult(std::vector<InferenceOutput> &inferOutputs,
     uint32_t outputDataBufId = 0;
     float *classBuff = static_cast<float *>(inferOutputs[outputDataBufId].data.get());
     // confidence threshold
-    float confidenceThreshold = 0.35;
+    float confidenceThreshold = 0.5;
 
     // class number
-    size_t classNum = 80;
+    size_t classNum = 2;
 
     //// number of (x, y, width, hight)
     size_t offset = 4;
